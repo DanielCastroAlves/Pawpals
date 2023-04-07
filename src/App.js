@@ -3,6 +3,10 @@ import Header from './componets/Header';
 import './assets/scss/pawpals.scss';
 import Hero from './page/Hero';
 import About from './page/About';
+import Testimonial from './page/Testimonial';
+import Contact from './page/Contact';
+import Footer from './componets/Footer';
+
 
 function App() {
   return (
@@ -10,6 +14,9 @@ function App() {
     <Header />
     <Hero />
     <About />
+    <Testimonial />
+    <Contact />
+    <Footer />
     </div>
   );
 }

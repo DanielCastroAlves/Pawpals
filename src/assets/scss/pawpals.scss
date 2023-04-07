@@ -1,5 +1,16 @@
-@import './componets/variable.scss';
-@import './componets/header.scss';
-@import './page/hero.scss';
-@import './page/about.scss';
-@import './componets/styles.scss';
+//scss componets
+
+@import "./componets/variable.scss";
+@import "./componets/header.scss";
+@import "./componets/testimonialCard.scss";
+@import "./componets/contactInput.scss";
+@import "./componets/footer.scss";
+
+// scss pages
+@import "./page/hero.scss";
+@import "./page/about.scss";
+@import "./page/testimonial.scss";
+@import "./page/contact.scss";
+
+//
+@import "./componets/styles.scss";
