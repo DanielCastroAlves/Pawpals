@@ -6,7 +6,7 @@ function Header() {
   const buttonsNav = [
     {
       nome: "About Us",
-      link: "aboutUs",
+      link: "/about",
     },
     {
       nome: "Available Dogs",
@@ -33,7 +33,9 @@ function Header() {
   return (
     <header>
       <nav className="header">
-        <img src={logo} alt="Logo" />
+        <a href="/">
+          <img src={logo} alt="Logo" />
+        </a>
         <ul className="nav-list">
           {buttonsNav.map((item) => (
             <li>

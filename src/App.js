@@ -1,23 +1,19 @@
-import './App.css';
-import Header from './componets/Header';
-import './assets/scss/pawpals.scss';
-import Hero from './page/Hero';
-import About from './page/About';
-import Testimonial from './page/Testimonial';
-import Contact from './page/Contact';
-import Footer from './componets/Footer';
-
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./assets/scss/pawpals.scss";
+import About from "./page/About";
+import Home from "./page/Home";
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <Hero />
-    <About />
-    <Testimonial />
-    <Contact />
-    <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        {/* outras rotas aqui */}
+      </Switch>
+    </Router>
   );
 }
 
